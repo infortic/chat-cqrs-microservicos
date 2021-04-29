@@ -23,5 +23,6 @@ public class SalaChat {
 	
 	private String salaId;
 	private String nomeSala;
+	
 	private Long timestamp;
 }

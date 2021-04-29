@@ -8,6 +8,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class CriarSalaEvent {
+	
 	private String salaId;
 	private String nome;
+	
 }

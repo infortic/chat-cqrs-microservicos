@@ -10,6 +10,7 @@ import infortic.chat.entity.MensagensChat;
 
 @Repository
 public interface EntrouNaSalaRepository extends PagingAndSortingRepository<EntrouNaSala, Long> {
-List<EntrouNaSala> findAllBySalaIdOrderByTimestamp(String salaId);
 	
+	List<EntrouNaSala> findAllBySalaIdOrderByTimestamp(String salaId);
+
 }

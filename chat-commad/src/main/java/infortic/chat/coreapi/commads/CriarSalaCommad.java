@@ -13,6 +13,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CriarSalaCommad {
+	
 	@TargetAggregateIdentifier
 	private String salaId;
 	private String nome;

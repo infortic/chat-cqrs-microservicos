@@ -13,9 +13,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EntrarSalaCommad {
+	
 	@TargetAggregateIdentifier
 	private String salaId;
 	private String participante;
-	
 	
 }

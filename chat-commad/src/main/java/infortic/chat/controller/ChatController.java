@@ -42,7 +42,7 @@ public class ChatController {
 	@PostMapping("/sala/entrar")
 	public ResponseEntity<?> entrarSalaChet(@RequestBody @Valid EntrarSalaDTO payLoad){
 		Assert.notNull(payLoad.getPartipante(),"Nome Inválido");
-		return new ResponseEntity<>(commandGateway.send(new EntrarSalaCommad(payLoad.getSalaId(), payLoad.getPartipante())).join(),HttpStatus.OK);		
+		return new ResponseEntity<>(commandGateway.send(new EntrarSalaCommad(payLoad.getSalaId(), payLoad.getPartipante())).join(), HttpStatus.OK);		
 	}
 	
 	@PostMapping("/sala/sair")
