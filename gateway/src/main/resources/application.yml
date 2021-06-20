@@ -1,0 +1,29 @@
+#Autor: cleiton.cardoso@meta.com.br
+
+server:
+  port: 1010
+
+spring:
+  application:
+    name: GATEWAY
+  cloud:
+   gateway:
+     routes:
+#    Cadastro de Microserviços LEITURA-ENERGIA-QUERY
+     - id: leitura-energia-query
+       uri: lb://LEITURA-ENERGIA-QUERY
+       predicates:
+        - Path=/leitura/**
+        
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+
+    
+    
+ 
